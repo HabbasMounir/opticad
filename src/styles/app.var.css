@@ -1,0 +1,12 @@
+:root {
+    --side-bar-bgColor:rgba(172, 161, 161, 0.295);
+    --side-bar-Width:250px;
+    --page-width:calc(100% - var(--side-bar-Width));
+    --side-bar-icon-color:#312783;
+    --side-bar-icon-wh:24px;
+    --side-bar-color:#312783;
+
+  }
+  
+
+

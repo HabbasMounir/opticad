@@ -17,10 +17,16 @@
    /* max-height:100vh; */
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: calc(100% - 0px);
     /* margin-block: 10px; */
     overflow-y:;
     overflow-x: hidden;
+    /* background-color: rgba(255, 255, 255, 0.342); */
+    filter: blur(0px);
+    /* outline: 1px solid #32278381; */
+    /* box-shadow: #32278338 0px 0px  10px; */text-transform: capitalize; 
+
+
 }
 
 .Logoblock{
@@ -30,14 +36,14 @@
     /* padding: 10px; */
 }
 .block{
-    background-color: rgba(207, 216, 216, 0.233);
+    background-color: rgba(221, 221, 221, 0.349);
     /* margin: 0 10px ; */
     outline: 1px solid #32278381;
     /* background-color: #32278381; */
     backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
-        box-shadow: #32278338 0px 0px  10px;
-    width: calc(100% - 20px);
+        box-shadow: #32278338 0px 1px  3px;
+    /* width: calc(100% - 20px); */
     text-align: center;
     padding:0 10px ;
     display: flex;
@@ -52,6 +58,7 @@ transition: all 1s .2s;
 outline: 1px solid #32278300;
 position: sticky;
 top: 0;        z-index: 2;
+
 
 }
 
@@ -123,14 +130,14 @@ backdrop-filter: blur(10px);
     /* z-index: 3; */
 
 }
-.droped > span{
+.droped > span,.droped > a{
 transition: all .4s;
     width: calc(100% - 20px) ;
     text-align: start;
     padding:5px 10px ;
 
 }
-.droped > span:hover{
+.droped > span:hover,.droped > a:hover{
 color: #32278381;
 text-align: end;
 

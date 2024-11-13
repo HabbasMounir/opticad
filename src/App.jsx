@@ -4,6 +4,8 @@ import viteLogo from '/vite.svg'
 import './styles/App.css'
 import './styles/app.var.css'
 import SideBar from './components/sideBar/sideBar'
+import Script from './scripts/script'
+import Routemap from './Routes/Routes'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,6 +13,7 @@ function App() {
   return (
     <>
       <SideBar/>
+      <Routemap/>
     </>
   )
 }

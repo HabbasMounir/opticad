@@ -2,8 +2,58 @@
 import { Link } from 'react-router-dom'
 import style from './sideBar.module.css'
 import logo from "./../../assets/largLogo.svg"
-import { Home, Users } from '../../assets/svgComponents/svg'
+import {  Users } from '../../assets/svgComponents/svg'
+import LinkBlock from './LinkBlock'
 export default function Sidebar() {
+
+    let nav=
+    [
+        {
+            Link:'home',
+        },
+        {
+            Link:'client',
+            droped:[
+                'mes clients',
+                'mes dus clients',
+                'mes suivis'
+            ]
+        },
+        {
+            Link:'client',
+            droped:[
+                'mes clients',
+                'mes dus clients',
+                'mes suivis'
+            ]
+        },
+        {
+            Link:'client',
+            droped:[
+                'mes clients',
+                'mes dus clients',
+                'mes suivis'
+            ]
+        },
+        {
+            Link:'client',
+            droped:[
+                'mes clients',
+                'mes dus clients',
+                'mes suivis'
+            ]
+        },
+        {
+            Link:'client',
+            droped:[
+                'mes clients',
+                'mes dus clients',
+                'mes suivis'
+            ]
+        }
+
+    ]
+
   return (
     <nav  className={style.sideNav}>
 
@@ -12,51 +62,22 @@ export default function Sidebar() {
     
     </span>
     <nav optico='true' className={style.nav}>
-    <span  className={style.block}>
-    <Home/> home
-    </span>
-    <span  className={style.block}>
-    <Home/> home
-    </span>
-    <span  className={style.droped}>
-        <span>Mes clients</span> 
-        <span>Mes dus clients</span> 
-        <span>Mes dus clients</span> 
-        <span>Mes suivis</span> 
-        <span>Mes suivis</span> 
-        <span>Mes devis</span> 
-    </span>
-    <span  className={style.block}>
-    <Home/> hodsdme225
-    </span>
-    <span className={style.droped}>
-        <span>Mes clients</span> 
-        <span>Mes dus clients</span> 
-        <span>Mes dus clients</span> 
-        <span>Mes suivis</span> 
-        <span>Mes suivis</span> 
-        <span>Mes devis</span> 
-    </span><span className={style.block}>
-    <Home/> home24524
-    </span>
-    <span className={style.droped}>
-        <span>Mes clients</span> 
-        <span>Mes dus clients</span> 
-        <span>Mes dus clients</span> 
-        <span>Mes suivis</span> 
-        <span>Mes suivis</span> 
-        <span>Mes devis</span> 
-    </span><span className={style.block}>
-    <Home/> home
-    </span>
-    <span className={style.droped}>
-        <span>Mes clients</span> 
-        <span>Mes dus clients</span> 
-        <span>Mes dus clients</span> 
-        <span>Mes suivis</span> 
-        <span>Mes suivis</span> 
-        <span>Mes devis</span> 
-    </span>
+        {nav.map((a,i)=><>
+            <LinkBlock bLink={a.Link} bto={a.to} key={i}/>
+            {a.droped&&
+            <span  className={style.droped}>
+            {a.droped?.map((b,i)=>{ 
+                let to=b.replaceAll(' ','_')
+    return <Link to={`${a.Link}/${to}`} key={i}>{b}</Link>
+            }
+        )}
+        </span> }
+        </>
+        )}
+
+
+
+ 
 
     </nav>
 

@@ -62,6 +62,7 @@ export default function Sidebar() {
     
     </span>
     <nav optico='true' className={style.nav}>
+        
         {nav.map((a,i)=><>
             <LinkBlock bLink={a.Link} bto={a.to} key={i}/>
             {a.droped&&

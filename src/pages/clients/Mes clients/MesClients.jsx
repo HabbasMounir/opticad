@@ -123,7 +123,7 @@ useEffect(()=>{
                </label>
             </div>
        
-            <div className={Style.Pagination}>
+            <div optico='true' className={Style.Pagination}>
     <span onClick={()=>Paginationhandler(0)}>first</span>
     <span onClick={()=>Paginationhandler("prev")}>prev</span>
     <span>0</span>

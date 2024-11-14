@@ -7,7 +7,7 @@ const [clientTable,setClientTable]=useState([])
 const [rslected,setRSlected]=useState('Nom')
 
 const [Pagination,setPagination]=useState({
-    st:0,end:4,steps:5
+    st:0,end:10,steps:5
 })
     let meClient =
     [
@@ -64,7 +64,7 @@ useEffect(()=>{
 
     function inputhandle(e){
         setRecherche(e.target.value)
-        setPagination({ st:0,end:4,steps:5 })
+        setPagination({  st:0,end:10,steps:5 })
 
     }
     function Paginationhandler(v){

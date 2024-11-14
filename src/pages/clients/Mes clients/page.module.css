@@ -98,6 +98,9 @@ user-select: none;
     outline: 1px solid #32278381;
     box-shadow: #32278381 0px 0px  5px;
     color: var(--side-bar-color);
+    /* height: 80vh; */
+    /* min-height: 40vh; */
+
 }
 
 
@@ -106,6 +109,7 @@ td {
   padding: 15px;
   background-color: rgba(255, 255, 255, 0.2);
   color: var(--side-bar-color);
+
 }
 td:hover {
   padding: 15px;
@@ -125,6 +129,7 @@ tbody tr {
   box-shadow: #32278338 0px 1px  3px;
   transition: all 0.5s;
   outline: 1px solid #32278300;
+
 }
 tbody tr:hover {
   background-color: #32278349;
@@ -132,6 +137,7 @@ tbody tr:hover {
   transition: all .5s .2s;
   outline: 1px solid #32278300;
 }
+
 tbody td {
   position: relative;
   

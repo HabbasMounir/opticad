@@ -48,9 +48,8 @@ useEffect(()=>{
         i>=Pagination.st&&i<=Pagination.end?c:""
          )
         ) 
-        console.log(clientTable)
 
-},[Pagination])
+},[meClient,Pagination,recherche,rslected])
 
 
 
@@ -107,7 +106,7 @@ useEffect(()=>{
   return (
     <main className={Style.page}>
         MesClients
-        <div  className={Style.panel}>
+        <div   className={Style.panel}>
 			<div  optico='true' className={Style.Recherche}>
                <label >
                Recherche :
@@ -135,7 +134,7 @@ useEffect(()=>{
             </div>
 
       </div>
-	<table   className={Style.table}>
+	<table optico='true'  className={Style.table}>
 		<thead  >
 			<tr optico='true'>
 				<th>Nom</th>
